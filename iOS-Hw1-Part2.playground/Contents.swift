@@ -16,6 +16,18 @@ import UIKit
  1.5) استعمل if statement , اذا كانت المصفوفة تحتوي على بيتزا قم بطباعه "yumm Pizza🍕😋"
 
 */
+var favFoods = ["pasta","seafood","burger"]
+favFoods.append("pizza")
+print(favFoods[0])
+
+for food in favFoods{
+    print(food)
+    if food == "pizza"{
+        print("😋🍕yumm pizza")
+    }
+}
+
+
 
 
 
@@ -23,6 +35,8 @@ import UIKit
 
 //: # 2️⃣  السؤال الثاني
 var numbers = [1,2,3,4,5,6,7,8,9,10]
+
+
 /*:
 
 ##
@@ -38,22 +52,19 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
  ملاحظة: معادله الرقم الزوجي number % 2 == 0
 
 */
+var evenNumbers : [Int] = []
+for number in numbers{
+    if number % 2 == 0{
+        evenNumbers.append(number)
+    }
+   
+}
+print(evenNumbers)
 
 //: # 3️⃣  السؤال الثالث
-/*:
-##
- ستقوم بعمل جدول الضرب من 1 الي 5
-#
- استعمل خارجيه for-in-loop و داخلها for-in-loop داخليه
-  
- #
-  الخارجيه تدور من 1 الي 5
- #
-   الداخليه تدور من 1 الي10
+for x in 1...5{
+    for y in 1...10{
+        print("\(x)x\(y)=\(x*y)")
+    }
+}
 
- #
- 1x1 = 1 مثال loop قم بطباعه الناتج لكل
-
- 
- */
-   
